@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+body {
+  display: flexbox;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: #1E90FF;
+  /* Pop color for links */
+  text-decoration: none;
+  /* Remove underline */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:hover {
+  text-decoration: underline;
+  /* Add underline on hover */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  /* Center container */
+  padding: 20px;
+}
+
+.nava {
+  color: black;
+  background-color: rgb(159, 153, 153);
+}
+
+.card-title {
+  color: black;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.card h5,
+.card h2 {
+  background-color: rgb(159, 153, 153);
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: rgb(159, 153, 153);
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: rgb(159, 153, 153);
+}
+
+.post-list-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+  justify-content: flex-start;
+  
+  height: 100vh;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.welcome-header{
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logout-container {
+  text-align: center;
+}
+
+.logout-button {
+  display: inline-block;
+}
+
+.button-container{
+  display: flex;
+  flex-direction: row;
 }
